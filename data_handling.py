@@ -1,7 +1,6 @@
 from data_structure import DataStruct
 from gsheet import Gspread
 import datetime as dt
-from flask import request
 
 
 class DataHandler:
@@ -31,7 +30,6 @@ class DataHandler:
             data_obj = DataStruct(date, month, name, reg, room, start_time,
                                   end_time, year)
             self.data_base.append(data_obj)
-        print("passed object allocation")
 
     def search_day(self):
         self.structure_data()

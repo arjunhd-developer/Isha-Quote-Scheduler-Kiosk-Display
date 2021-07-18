@@ -13,7 +13,6 @@ def home():
     data_handler.structure_data()
     data_handler.search_day()
     date_today = data_handler.today
-    print(data_handler.master_data_set)
     return render_template(
         "home.html",
         quote_date=quote.quote_date.text,
